@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="32465" started-at="2019-08-24T02:00:12Z" finished-at="2019-08-24T02:00:44Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="32465" started-at="2019-08-24T02:00:12Z" finished-at="2019-08-24T02:00:44Z">
+      <class name="ScreenShotdemo">
+        <test-method status="PASS" signature="SsCode()[pri:0, instance:ScreenShotdemo@2a5ca609]" name="SsCode" duration-ms="32369" started-at="2019-08-24T07:30:12Z" finished-at="2019-08-24T07:30:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SsCode -->
+      </class> <!-- ScreenShotdemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

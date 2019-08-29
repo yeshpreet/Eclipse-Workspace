@@ -1,0 +1,26 @@
+package StepDefinition;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+
+public class Login {
+	public static WebDriver driver;
+	
+	
+@Given ("^Open Browser$")
+public void OpenBrowser() {
+	String driverPath=System.getProperty("user.dir")+"\\src\\main\\java\\Browser_Drivers\\chromedriver.exe";
+	System.setProperty("webdriver.chrome.driver", driverPath);
+	driver = new ChromeDriver();
+}
+
+@And ("^Launch application$")
+public void launchapp() {
+	driver.get("https://www.flipkart.com/");
+}
+
+
+}

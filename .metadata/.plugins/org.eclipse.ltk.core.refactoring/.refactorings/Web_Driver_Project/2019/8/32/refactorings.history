@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;POM_Demo/src/Browsers&apos;&#x0D;&#x0A;- Original project: &apos;Web_Driver_Project&apos;&#x0D;&#x0A;- Destination element: &apos;POM_Demo/src/Browsers&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     chromedriver.exe&#x0D;&#x0A;     geckodriver.exe" description="Copy files" destination="=POM_Demo/src&lt;Browsers" element1="src/Browser_Drivers/chromedriver.exe" element2="src/Browser_Drivers/geckodriver.exe" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1565148062744" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,56 @@
+import java.util.HashMap;
+import java.util.Map;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
+
+public class Login_Logout {
+
+	public static void main(String[] args) throws InterruptedException {
+		// Driver path
+		System.getProperty("user.dir");
+		//C:\\Users\\Jaspreet\\eclipse-workspace\\Web_Driver_Project
+	String driverPath=System.getProperty("user.dir")+"\\src\\Browser_Drivers\\chromedriver.exe";
+	System.setProperty("webdriver.chrome.driver", driverPath);
+	//WebDriver driver= new ChromeDriver();
+	
+	//Create a map to store  preferences 
+	Map<String, Object> prefs = new HashMap<String, Object>();
+ 
+	//add key and value to map as follow to switch off browser notification
+	//Pass the argument 1 to allow and 2 to block
+	prefs.put("profile.default_content_setting_values.notifications", 2);
+
+	//Create an instance of ChromeOptions 
+	ChromeOptions options = new ChromeOptions(); 
+
+	// set ExperimentalOption - prefs 
+	options.setExperimentalOption("prefs", prefs);
+
+	//Now Pass ChromeOptions instance to ChromeDriver Constructor to initialize chrome driver which will switch off this browser notification on the chrome browser
+	WebDriver driver = new ChromeDriver(options);
+	   
+	//open facebook page
+		driver.get("https://www.facebook.com");
+		//browser.keys("Escape"); 
+		driver.manage().window().maximize();
+	 
+
+	driver.findElement(By.id("email")).sendKeys("sdetbatch0402@gmail.com");
+	driver.findElement(By.id("pass")).sendKeys("sdet040213");
+	driver.findElement(By.id("loginbutton")).click();
+	
+	driver.findElement(By.id("userNavigationLabel")).click();
+	Thread.sleep(2000);
+   //driver.findElement(By.xpath("//a[@data-gt='{\"ref\":\"async_menu\",\"logout_menu_click\":\"menu_logout\"}']")).click();
+   driver.findElement(By.xpath("//form[contains(@action,'https://www.facebook.com/login/device-based/regular/logout/')]")).submit();
+	
+
+	}
+
+}

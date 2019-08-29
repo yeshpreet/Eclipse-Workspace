@@ -1,0 +1,51 @@
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.Test;
+
+public class FlipKart {
+public static WebDriver driver;
+	@Test
+	public void flipkart() throws InterruptedException, AWTException {
+		String Driver=System.getProperty("user.dir");
+		String Driverpath=Driver+"\\src\\Browser_Drivers\\chromedriver.exe" ;
+		System.setProperty("webdriver.chrome.driver",Driverpath);
+		
+		
+//		
+//		Map<String, Object> prefs = new HashMap<String, Object>();
+//		prefs.put("profile.default_content_setting_values.notifications", 2);
+//		ChromeOptions options = new ChromeOptions();
+//		options.setExperimentalOption("prefs", prefs);
+//		driver = new ChromeDriver(options);
+		
+		driver = new ChromeDriver();
+		driver.get("https://www.flipkart.com");
+		driver.manage().window().maximize();
+		Thread.sleep(2000);
+		
+		Robot robot = new Robot(); 
+		robot.keyPress(KeyEvent.VK_ESCAPE); robot.keyRelease(KeyEvent.VK_ESCAPE);
+		
+//		//String parentWindowHandler = driver.getWindowHandle(); // Store your parent window
+//		String subWindowHandler = null;
+//		Set<String> handles = driver.getWindowHandles(); // get all window handles
+//		Iterator<String> iterator = handles.iterator();
+//		while (iterator.hasNext()){
+//		    subWindowHandler = iterator.next();
+//		}
+//		driver.switchTo().window(subWindowHandler);
+//		
+	}
+	
+}
+//https://www.flipkart.com

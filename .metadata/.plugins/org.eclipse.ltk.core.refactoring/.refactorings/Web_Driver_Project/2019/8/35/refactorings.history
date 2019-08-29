@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;BDDFrameworkDemo/src/main/java/Browser_Drivers&apos;&#x0D;&#x0A;- Original project: &apos;Web_Driver_Project&apos;&#x0D;&#x0A;- Destination element: &apos;BDDFrameworkDemo/src/main/java/Browser_Drivers&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     geckodriver.exe&#x0D;&#x0A;     chromedriver.exe" description="Copy files" destination="=BDDFrameworkDemo/src\/main\/java&lt;Browser_Drivers" element1="Browser_Driver/geckodriver.exe" element2="Browser_Driver/chromedriver.exe" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1567047029656" units="0" version="1.0"/>
+</session>

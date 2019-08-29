@@ -1,0 +1,50 @@
+import java.util.HashMap;
+import java.util.Map;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
+
+public class Login_Logout {
+
+	public static void main(String[] args) {
+		// Driver path
+	String driverPath=System.getProperty("user.dir")+"\\src\\Browser_Drivers\\chromedriver.exe";
+	System.setProperty("webdriver.chrome.driver", driverPath);
+	WebDriver driver= new ChromeDriver();
+	//open google page
+		driver.get("https://www.facebook.com");
+	//maximize browser
+	
+	driver.findElement(By.id("email")).sendKeys("sdetbatch0402@gmail.com");
+	driver.findElement(By.id("pass")).sendKeys("sdet040213");
+	driver.findElement(By.id("loginbutton")).click();
+	driver.manage().window().maximize();
+	
+	Actions action = new Actions(driver);
+	   action.sendKeys(Keys.ESCAPE);//.build.perform;
+	
+	
+//	 Actions action = new Actions(driver);
+//	   action.sendKeys(Keys.ESCAPE);
+	   
+//	 driver.findElement(By.id("idOfElement"));
+//	browser.sendKeys(Keys.RETURN);
+	
+	//browser.keys("Escape"); 
+	
+	//new Actions().sendKeys(Keys.ESCAPE).build().perform();
+//	ChromeOptions options = new ChromeOptions();
+//	options.addArguments("--Block");
+//	
+	
+	
+	
+
+	}
+
+}

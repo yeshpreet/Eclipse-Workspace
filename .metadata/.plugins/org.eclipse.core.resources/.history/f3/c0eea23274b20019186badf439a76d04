@@ -1,0 +1,7 @@
+
+
+public class AnnotationsDemo {
+public void LaunchBrowser() {
+	System.out.println("Launching Browser");
+}
+}

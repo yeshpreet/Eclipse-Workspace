@@ -1,0 +1,32 @@
+import java.util.HashMap;
+import java.util.Map;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class Login_Logout {
+
+	public static void main(String[] args) {
+		// Driver path
+	String driverPath=System.getProperty("user.dir")+"\\src\\Browser_Drivers\\chromedriver.exe";
+	System.setProperty("webdriver.chrome.driver", driverPath);
+	WebDriver driver= new ChromeDriver();
+	//open google page
+		driver.get("https://www.facebook.com");
+	//maximize browser
+	driver.manage().window().maximize();
+	driver.findElement(By.id("email")).sendKeys("sdetbatch0402@gmail.com");
+	driver.findElement(By.id("pass")).sendKeys("sdet040213");
+	driver.findElement(By.id("loginbutton")).click();
+	
+	ChromeOptions options = new ChromeOptions();
+	options.addArguments("--disable-notifications");
+	
+	
+	
+
+	}
+
+}

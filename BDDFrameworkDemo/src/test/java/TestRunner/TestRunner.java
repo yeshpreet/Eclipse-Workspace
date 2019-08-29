@@ -1,0 +1,16 @@
+package TestRunner;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features="src\\main\\java\\Features\\Login.feature",
+				glue= "StepDefinition",
+				dryRun=true// to actually run code optional
+				//dryRun=true --will not run test case but only check mapping
+				)
+public class TestRunner {
+
+}

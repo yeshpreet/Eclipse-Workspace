@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="BDDFrameworkDemo" tests="5" started="5" failures="0" errors="0" ignored="3">
+  <testsuite name="TestRunner.TestRunner" time="15.492">
+    <testsuite name="Feature: Test Login Functionality" time="15.492">
+      <testsuite name="Scenario: Check Login" time="15.492" incomplete="true">
+        <skipped/>
+        <testcase name="Given Open Browser" classname="Scenario: Check Login" time="15.461"/>
+        <testcase name="And Launch application" classname="Scenario: Check Login" time="0.027"/>
+        <testcase name="When User enters valid username" classname="Scenario: Check Login" time="0.001" ignored="true"/>
+        <testcase name="And User enter valid password" classname="Scenario: Check Login" time="0.002" ignored="true"/>
+        <testcase name="Then CLick on Login Button" classname="Scenario: Check Login" time="0.0" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

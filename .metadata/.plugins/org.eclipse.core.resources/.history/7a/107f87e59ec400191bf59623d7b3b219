@@ -1,0 +1,13 @@
+import org.junit.Test;
+
+public class browserlaunch {
+public static Webdriver driver;
+	@Test
+	public void Blaunch() {
+		String dpath= System.getProperty("user.dir");
+		String driverpath=dpath+"src/test/java\\browserdriver\\chromedriver.exe";
+		System.setProperty(webdriver.chrome.driver, driverpath);
+		driver= new ChromeDriver();
+		driver.get("https://facebook.com/")
+	}
+}

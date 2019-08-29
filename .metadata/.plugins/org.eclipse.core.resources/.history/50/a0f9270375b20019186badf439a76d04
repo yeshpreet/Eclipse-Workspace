@@ -1,0 +1,8 @@
+import org.testng.annotations.Test;
+
+public class AnnotationsDemo {
+	@Test 
+public void LaunchBrowser() {
+	System.out.println("Launching Browser");
+}
+}

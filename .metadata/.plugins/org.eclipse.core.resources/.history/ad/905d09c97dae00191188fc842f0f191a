@@ -1,0 +1,55 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class WebDriverScript {
+
+	public static void main(String[] args) {
+	
+		// Driver path
+	String driverPath=System.getProperty("user.dir")+"\\src\\Browser_Drivers\\chromedriver.exe";
+	System.setProperty("webdriver.chrome.driver", driverPath);
+	WebDriver driver= new ChromeDriver();
+	
+	//maximize browser
+	driver.manage().window().maximize();
+	
+	//open google page
+	driver.get("https://www.facebook.com");
+//	driver.findElement(By.id("email")).sendKeys("admin@gmail.com");
+//	driver.findElement(By.id("pass")).sendKeys("admin123");
+//	driver.findElement(By.id("loginbutton")).click();
+//	driver.findElement(By.name("email")).sendKeys("admin@gmail.com");
+	
+	driver.findElement(By.name("firstname")).sendKeys("Selenium");
+	driver.findElement(By.name("lastname")).sendKeys("Test");
+	driver.findElement(By.name("reg_email__")).sendKeys("yeshpreet@gmail.com");
+	driver.findElement(By.name("reg_email_confirmation__")).sendKeys("yeshpreet@gmail.com");
+	driver.findElements(By.name("reg_passwd__")).get(0).sendKeys("1234567890");
+	driver.findElement(By.id("day")).sendKeys("10");
+	driver.findElement(By.id("month")).sendKeys("jul");
+	driver.findElement(By.id("year")).sendKeys("1980");
+	driver.findElement(By.name("sex")).click();
+	//driver.findElement(By.name("websubmit")).click();
+	//driver.findElement(By.name("reg_email__")).clear();
+	//driver.findElement(By.name("reg_email__")).sendKeys("1233@gmail.com");
+	
+	
+	
+	
+//	// opening firefox browser
+//	
+//	String driverPath1=System.getProperty("user.dir")+"\\src\\Browser_Drivers\\geckodriver.exe";
+//	System.setProperty("webdriver.gecko.driver", driverPath1);
+//	WebDriver driver1= new FirefoxDriver();
+//	
+//	//maximize browser
+//	driver1.manage().window().maximize();
+//	
+//	//open google page
+//	driver1.get("https://www.google.com");
+	}
+
+}
+ 
